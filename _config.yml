@@ -1,8 +1,8 @@
 
 # Site settings
-title: 
-email: 
-baseurl: "/JekyllTheme-ProjectGaia" # the subpath of your site, e.g. /blog/
+title: Eric's Personal Blog
+email: ericlee0920@alumni.ubc.ca
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 markdown: kramdown
