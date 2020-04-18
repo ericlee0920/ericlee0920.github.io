@@ -26,7 +26,7 @@ body {
     width: $sidebarWidth;
     @include transition(all 1s ease);
     @include box-shadow(-3px 0px 10px $deepgrey);
-    background: $midnightblue;
+    background: $darkblue;
   }
 
   #page-content-wrapper {
