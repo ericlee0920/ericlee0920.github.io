@@ -2,7 +2,7 @@
   function pagination(){
     $("div.pagination").jPages({
       containerID : "archivelist",
-      previous: "Preivous",
+      previous: "Previous",
       next: "Next",
       perPage: 8
     });
