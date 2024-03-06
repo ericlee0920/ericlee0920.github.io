@@ -23,7 +23,7 @@ about:
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
-copyright_start_year: "2022"
+copyright_start_year: "2024"
 
 # make sure creative_commons.enable is true in _data/conf/main.yml file
 creative_commons:
@@ -50,14 +50,14 @@ meta_common_description: "Your meta description."
 contacts:
   - github: "ericlee0920"
   #- email: ""
-  #- linkedin: ""
+  - linkedin: "ericlee0920"
   #- twitter: ""
   #- mastodon: ""
   #- instagram: ""
   #- youtube: ""
   #- facebook: ""
 # to add more, check the _data/const/contact.yml file
-#  - your_new_contact: ""
+  - google-scholar: "klavY_cAAAAJ"
 
 # make sure one of comment engine is enabled in _data/conf/posts.yml file
 comments:
