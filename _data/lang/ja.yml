@@ -171,9 +171,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: こんにちは
+  greetings: こんにちは！
   welcome: ようこそ
-  sample: サンプル
+  sample: パーソナルウエブサイト
 
 # for contact form
 contact_form:
