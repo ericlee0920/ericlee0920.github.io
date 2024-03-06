@@ -145,12 +145,6 @@ archives:
   button_name: Archive
   page_header: Archive
 
-# for about layout
-about:
-  title: About
-  button_name: About
-  email_title: email
-
 # for links layout
 links:
   title: Links

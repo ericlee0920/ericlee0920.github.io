@@ -17,10 +17,6 @@ home:
   # if commented, top header will be a single line
   top_header_line2: "エリックのガーデン" #"$site_brand"
 
-# about page sub title
-about:
-  sub_title: "$site_sample"
-
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
 copyright_start_year: "2024"
@@ -44,7 +40,7 @@ creative_commons:
 # if it has no content, this will be used for page description. It is also used in manifest.json
 meta_common_description: "メタディスクリプション"
 
-# contact options (side nav bottom and about page)
+# contact options (side nav bottom)
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:

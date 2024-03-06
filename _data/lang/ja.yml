@@ -145,12 +145,6 @@ archives:
   button_name: アーカイブ
   page_header: アーカイブ
 
-# for about layout
-about:
-  title: 私について
-  button_name: 私について
-  email_title: メール
-
 # for links layout
 links:
   title: リンク
