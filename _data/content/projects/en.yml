@@ -8,107 +8,36 @@ page_data:
     info: "Work done and those in progress."
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
-    img: ":projects-heading.jpg"
+    img: ":project-heading.jpg"
     back_color: "lightblue"
 
   category:
     - title: "Software"
-      type: id_example
+      type: id_software
       color: "#8e62b4"
     - title: "Analysis"
       type: id_picture
       color: "#de4085"
-    - title: "Quote"
-      type: id_quote
-      color: "#408cde"
 
   list:
     # example
-    - type: id_example
-      project_name: "Example Project"
-      project_excerpt: "Examples"
-      img: ":project1_thumb.jpg"
-      img_title: "img title1"
-      date: "2021-03-13"
+    - type: id_software
+      project_name: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
+      project_excerpt: "Lee _et al_. 2023, Bioinformatics"
+      img: ":spatialsort.png"
+      img_title: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
+      date: "2023-06-30"
       post: |
-        ### Headings (centered)
+        ### Abstract (centered)
         {:data-align="center"}
 
+        > **Motivation**
+        Recent advances in spatial proteomics technologies have enabled the profiling of dozens of proteins in thousands of single cells in situ. This has created the opportunity to move beyond quantifying the composition of cell types in tissue, and instead probe the spatial relationships between cells. However, most current methods for clustering data from these assays only consider the expression values of cells and ignore the spatial context. Furthermore, existing approaches do not account for prior information about the expected cell populations in a sample.
+        **Results**
+        To address these shortcomings, we developed SpatialSort, a spatially aware Bayesian clustering approach that allows for the incorporation of prior biological knowledge. Our method is able to account for the affinities of cells of different types to neighbour in space, and by incorporating prior information about expected cell populations, it is able to simultaneously improve clustering accuracy and perform automated annotation of clusters. Using synthetic and real data, we show that by using spatial and prior information SpatialSort improves clustering accuracy. We also demonstrate how SpatialSort can perform label transfer between spatial and nonspatial modalities through the analysis of a real world diffuse large B-cell lymphoma dataset.
+
         ***
+        Available on [Github](https://github.com/Roth-Lab/SpatialSort)!
 
-        ### Paragraphs
-
-        #### Paragraph
-
-        **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        #### Texts
-
-        Quoted text `Hello world`
-
-        Bold text **Hello world**
-
-        Italic text _Hello world_
-
-        kbd text <kbd>Hello world</kbd>
-
-        #### Blockquote
-
-        > **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        ### Link
-
-        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
-
-        ### Picture
-
-        ![such a lovely place](:projects-heading.jpg)
-
-    # picture
-    - type: id_picture
-      project_name: "Example Project"
-      project_excerpt: "Picture"
-      img: ":project2_thumb.jpg"
-      img_title: "img title2"
-      date: "2021-04-23"
-      post: |
-        # Title
-        This is project content.
-
-        ![Image](:project2_thumb.jpg)
-
-    # quote
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "Albert Einstein"
-      img: ":project2_thumb.jpg"
-      img_title: "img title4"
-      date: "2021-06-08"
-      post: |
-        Two things are infinite: the universe and human stupidity.
+        ***
+        ![(a) Schematic overview, (b) probabilistic graphical model, and (c) prior distributions of SpatialSort. SpatialSort requires expression, cell location, and neighbour relation data as inputs. For each patient, a neighbour graph modelled by a MRF is built to represent the spatial context. Using both expression and spatial data for inference, SpatialSort jointly infers cluster assignment and the interaction parameter of the HMRF to probabilistically assign each cell to a given cell type cluster. When an expectation of certain cell types or a collection of labelled data is present, a prior expression matrix or an anchor expression matrix can be incorporated to improve clustering or perform label transfer.](:spatialsort_overview.png)
