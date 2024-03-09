@@ -23,12 +23,12 @@ page_data:
     # example
     - type: id_software
       project_name: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
-      project_excerpt: "Lee _et al_. 2023, Bioinformatics"
+      project_excerpt: "Lee et al. 2023, Bioinformatics"
       img: ":spatialsort.png"
       img_title: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
       date: "2023-06-30"
       post: |
-        ### Abstract (centered)
+        ### Abstract
         {:data-align="center"}
 
         > **Motivation**
@@ -41,3 +41,25 @@ page_data:
 
         ***
         ![(a) Schematic overview, (b) probabilistic graphical model, and (c) prior distributions of SpatialSort. SpatialSort requires expression, cell location, and neighbour relation data as inputs. For each patient, a neighbour graph modelled by a MRF is built to represent the spatial context. Using both expression and spatial data for inference, SpatialSort jointly infers cluster assignment and the interaction parameter of the HMRF to probabilistically assign each cell to a given cell type cluster. When an expectation of certain cell types or a collection of labelled data is present, a prior expression matrix or an anchor expression matrix can be incorporated to improve clustering or perform label transfer.](:spatialsort_overview.png)
+
+    - type: id_software
+      project_name: "ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images"
+      project_excerpt: "Lee et al. 2024, Bioinformatics"
+      img: ":esqmodel.jpeg"
+      img_title: "ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images"
+      date: "2023-12-28"
+      post: |
+        ### Abstract
+        {:data-align="center"}
+
+        > **Motivation**
+        Single cell segmentation is critical in the processing of spatial omics data to accurately perform cell type identification and analyze spatial expression patterns. Segmentation methods often rely on semi-supervised annotation or labeled training data which are highly dependent on user expertise. To ensure the quality of segmentation, current evaluation strategies quantify accuracy by assessing cellular masks or through iterative inspection by pathologists. While these strategies each address either the statistical or biological aspects of segmentation, there lacks a unified approach to evaluating segmentation accuracy.
+
+        **Results**
+        In this article, we present ESQmodel, a Bayesian probabilistic method to evaluate single cell segmentation using expression data. By using the extracted cellular data from segmentation and a prior belief of cellular composition as input, ESQmodel computes per cell entropy to assess segmentation quality by how consistent cellular expression profiles match with cell type expectations.
+
+        ***
+        Available on [Github](https://github.com/Roth-Lab/ESQmodel.)!
+
+        ***
+        ![Schematic overview of ESQmodel. (a) ESQmodel takes in two inputs: (1) a protein expression matrix generated from applying single cell segmentation on stacked multiplexed images, (2) a user provided prior expression matrix indicating the level of cellular expression per expected cell type. ESQmodel outputs an entropy score per cell segmented. This metric can be used to compare performances of different segmentation approaches on the same dataset. (b) Three common errors in segmentation: partially segmenting cells, splitting cells, and merging cells.](:esqmodel_overview.jpeg)
