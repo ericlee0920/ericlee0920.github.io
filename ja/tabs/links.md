@@ -41,21 +41,62 @@ lng_pair: id_links
 ###########################################################
 page_data:
   main:
-    header: "リンク"
-    info: "リンクページの説明はこちら。"
+    header: "Links"
+    info: "Some secret shortcuts..."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "プログラミング"
-      type: id_programming
+    - title: "Conference Talks"
+      type: id_talk
+      color: "#8e62b4"
+    - title: "Press Interview"
+      type: id_news
       color: "#F4A273"
+
+    # conference talks
+    - type: id_talk
+      title: "GIW/ISCB-ASIA 2023"
+      url: "https://www.giw-sg.com/programme"
+      info: "Project Talk: ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images."
+    - type: id_talk
+      title: "ISMB/ECCB 2023"
+      url: "https://www.iscb.org/cms_addon/conferences/ismbeccb2023/proceedings.php#MLCSB"
+      info: "Proceedings Talk: SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data."
 
   list:
     -
-    # programming
-    - type: id_programming
-      title: "Stack OverFlow"
-      url: "https://stackoverflow.com/"
-      info: "Stack Overflowは、プロや熱狂的なプログラマー向けの質疑応答Webサイトです。"
+    # press interview
+    - type: id_news
+      title: "UBC In The News 2023/09/19"
+      url: "https://news.ubc.ca/2023/09/19/ubc-in-the-news-992/"
+      info: "Taiwanese Student Forum empowers young people to leverage culture and values to benefit the community."
+    - type: id_news
+      title: "Central News Agency 2023/09/18"
+      url: "https://www.cna.com.tw/news/aipl/202309180173.aspx"
+      info: "挺台入聯 溫哥華僑胞和學生宣揚台灣民主理念."
+    - type: id_news
+      title: "Singtao 2023/09/18"
+      url: "https://www.singtao.ca/6378068/2023-09-18/news-%E6%BA%AB%E5%93%A5%E8%8F%AF%E5%8F%B0%E7%81%A3%E5%AD%B8%E7%94%9F%E8%AB%96%E5%A3%87%E5%88%86%E4%BA%AB%E3%80%8C%E8%BD%89%E5%8B%95%E4%B8%96%E7%95%8C%E7%9A%84%E5%8F%B0%E7%81%A3%E5%83%B9%E5%80%BC%E3%80%8D/?variant=zh-hk"
+      info: "溫哥華台灣學生論壇分享「轉動世界的台灣價值」."
+    - type: id_news
+      title: "Pancouver 2023/09/17"
+      url: "https://pancouver.ca/vancouver-taiwanese-student-forum-empowers-young-people-to-leverage-culture-and-values-to-benefit-the-community/"
+      info: "Vancouver Taiwanese Student Forum empowers young people to leverage culture and values to benefit the community."
+    - type: id_news
+      title: "Singtao 2023/08/28"
+      url: "https://www.singtao.ca/6358631/2023-08-28/news-%E6%BA%AB%E5%93%A5%E8%8F%AF%E5%8F%B0%E7%81%A3%E5%AD%B8%E7%94%9F%E8%AB%96%E5%A3%87++9%E6%9C%8817%E6%97%A5%E5%8D%91%E8%A9%A9%E5%A4%A7%E5%AD%B8%E7%99%BB%E5%A0%B4/?variant=zh-hk"
+      info: "溫哥華台灣學生論壇 9月17日卑詩大學登場."
+    - type: id_news
+      title: "TECO Vancouver 2022/06/14"
+      url: "https://www.taiwanembassy.org/cayvr/post/22285.html"
+      info: "第一屆溫哥華台灣學生論壇6月12日舉行."
+    - type: id_news
+      title: "Central News Agency 2022/06/13"
+      url: "https://www.cna.com.tw/news/aipl/202206130214.aspx"
+      info: "首屆溫哥華台灣學生論壇舉行 強調台灣身分認同."
+    - type: id_news
+      title: "Singtao 2022/06/13"
+      url: "https://www.singtao.ca/5835716/2022-06-13/post-%E9%A6%96%E5%B1%86%E5%8F%B0%E7%81%A3%E5%AD%B8%E7%94%9F%E8%AB%96%E5%A3%87-%E6%8E%A2%E8%A8%8E%E8%BA%AB%E4%BB%BD%E8%AA%8D%E5%90%8C%E5%95%8F%E9%A1%8C/?variant=zh-hk"
+      info: "首屆台灣學生論壇 探討身份認同問題."
 
 ---

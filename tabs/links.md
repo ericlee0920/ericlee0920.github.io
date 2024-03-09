@@ -65,8 +65,6 @@ page_data:
       url: "https://www.iscb.org/cms_addon/conferences/ismbeccb2023/proceedings.php#MLCSB"
       info: "Proceedings Talk: SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data."
 
-  list:
-    -
     # press interview
     - type: id_news
       title: "UBC In The News 2023/09/19"
