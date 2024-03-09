@@ -49,6 +49,7 @@ page_data:
     - title: "Programming"
       type: id_programming
       color: "#F4A273"
+
   list:
     -
     # programming

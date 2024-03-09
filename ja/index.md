@@ -37,9 +37,6 @@ img: ":home-heading.jpg"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+I am a PhD candidate in the Bioinformatics Graduate Program at the University of British Columbia and the Department of Molecular Oncology at BC Cancer Research Institute.
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
-
-{{ website_info_text_second }}
+My research is centered on developing computational approaches to explore the spatial cellular architecture of both normal and tumour tissues. Spatial biology is a growing field for methods development that draw inspiration from pathology, image processing, and machine learning literature. I am especially interested in large-scale transcriptomic and proteomic analysis to elucidate how cell-cell interactions modulates the development or evolution of the cellular ecosystem.
