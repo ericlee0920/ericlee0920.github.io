@@ -73,19 +73,17 @@ page_data:
       title: "Singtao 2023/08/28"
       url: "https://www.singtao.ca/6358631/2023-08-28/news-%E6%BA%AB%E5%93%A5%E8%8F%AF%E5%8F%B0%E7%81%A3%E5%AD%B8%E7%94%9F%E8%AB%96%E5%A3%87++9%E6%9C%8817%E6%97%A5%E5%8D%91%E8%A9%A9%E5%A4%A7%E5%AD%B8%E7%99%BB%E5%A0%B4/?variant=zh-hk"
       info: "溫哥華台灣學生論壇 9月17日卑詩大學登場."
-      - type: id_news
+    - type: id_news
+      title: "TECO Vancouver 2022/06/14"
+      url: "https://www.taiwanembassy.org/cayvr/post/22285.html"
+      info: "第一屆溫哥華台灣學生論壇6月12日舉行."
+    - type: id_news
       title: "Central News Agency 2022/06/13"
       url: "https://www.cna.com.tw/news/aipl/202206130214.aspx"
       info: "首屆溫哥華台灣學生論壇舉行 強調台灣身分認同."
-      - type: id_news
-      - type: id_news
+    - type: id_news
       title: "Singtao 2022/06/13"
       url: "https://www.singtao.ca/5835716/2022-06-13/post-%E9%A6%96%E5%B1%86%E5%8F%B0%E7%81%A3%E5%AD%B8%E7%94%9F%E8%AB%96%E5%A3%87-%E6%8E%A2%E8%A8%8E%E8%BA%AB%E4%BB%BD%E8%AA%8D%E5%90%8C%E5%95%8F%E9%A1%8C/?variant=zh-hk"
       info: "首屆台灣學生論壇 探討身份認同問題."
-      - type: id_news
-      title: "TECO Vancouver 2022/06/02"
-      url: "https://www.taiwanembassy.org/cayvr/post/22210.html"
-      info: "2022溫哥華台灣學生論壇(Vancouver Taiwanese Student Forum) 6月12日舉行."
-
 
 ---
