@@ -46,9 +46,24 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
+    - title: "Conference Talks"
+      type: id_talk
+      color: "#8e62b4"
     - title: "Press Interview"
       type: id_news
       color: "#F4A273"
+  
+  list:
+    -
+    # conference talks
+    - type: id_talk
+      title: "GIW/ISCB-ASIA 2023"
+      url: "https://www.giw-sg.com/programme"
+      info: "Project Talk: ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images."
+    - type: id_talk
+      title: "ISMB/ECCB 2023"
+      url: "https://www.iscb.org/cms_addon/conferences/ismbeccb2023/proceedings.php#MLCSB"
+      info: "Proceedings Talk: SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data."
 
   list:
     -
