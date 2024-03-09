@@ -5,87 +5,228 @@
 page_data:
   main:
     header: "プロジェクト"
-    info: "一生懸命工事中。"
+    info: "プロジェクトページの説明はこちら。"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
-    img: ":project-heading.jpg"
+    img: ":projects-heading.jpg"
     back_color: "lightblue"
 
-category:
-    - title: "Methods"
-      type: id_software
-      color: "#8e62b4"
-    - title: "Analysis"
-      type: id_analysis
-      color: "#de4085"
+  category:
+    - title: "例"
+      type: id_example
+      color: "gray"
+    - title: "写真"
+      type: id_picture
+      color: "#62b462"
+    - title: "名言"
+      type: id_quote
+      color: "#2FD0ED"
 
   list:
-    - type: id_software
-      project_name: "ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images"
-      project_excerpt: "Lee et al. 2024, Bioinformatics"
-      img: ":esqmodel.jpeg"
-      img_title: "ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images"
-      date: "2023-12-28"
+    # example
+    - type: id_example
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "例"
+      img: ":project1_thumb.jpg"
+      img_title: "img title1"
+      date: "2021-03-13"
       post: |
-        ### Abstract
+        # Examples
+
+        This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
+
+        ### Headings (centered)
         {:data-align="center"}
 
-        > **Motivation**
-        Single cell segmentation is critical in the processing of spatial omics data to accurately perform cell type identification and analyze spatial expression patterns. Segmentation methods often rely on semi-supervised annotation or labeled training data which are highly dependent on user expertise. To ensure the quality of segmentation, current evaluation strategies quantify accuracy by assessing cellular masks or through iterative inspection by pathologists. While these strategies each address either the statistical or biological aspects of segmentation, there lacks a unified approach to evaluating segmentation accuracy.
+        # Heading 1
 
-        >**Results**
-        In this article, we present ESQmodel, a Bayesian probabilistic method to evaluate single cell segmentation using expression data. By using the extracted cellular data from segmentation and a prior belief of cellular composition as input, ESQmodel computes per cell entropy to assess segmentation quality by how consistent cellular expression profiles match with cell type expectations.
+        ## Heading 2
+
+        ### Heading 3
+
+        #### Heading 4
+
+        ##### Heading 5
+
+        ###### Heading 6
 
         ***
-        Available on [Github](https://github.com/Roth-Lab/ESQmodel)!
+
+        ### Paragraphs
+
+        #### Paragraph
+
+        **William Shakespeare**, Let me not to the marriage of true minds
+        Admit impediments. Love is not love
+        Which alters when it alteration finds,
+        Or bends with the remover to remove.
+        O no, it is an ever-fixed mark
+        That looks on tempests and is never shaken;
+        It is the star to every wand'ring barque,
+        Whose worth's unknown, although his height be taken.
+        Love's not Time's fool, though rosy lips and cheeks
+        Within his bending sickle's compass come;
+        Love alters not with his brief hours and weeks,
+        But bears it out even to the edge of doom.
+        If this be error and upon me proved,
+        I never writ, nor no man ever loved.
+
+        #### Texts
+
+        Quoted text `Hello world`
+
+        Bold text **Hello world**
+
+        Italic text _Hello world_
+
+        kbd text <kbd>Hello world</kbd>
+
+        #### Blockquote
+
+        > **William Shakespeare**, Let me not to the marriage of true minds
+        Admit impediments. Love is not love
+        Which alters when it alteration finds,
+        Or bends with the remover to remove.
+        O no, it is an ever-fixed mark
+        That looks on tempests and is never shaken;
+        It is the star to every wand'ring barque,
+        Whose worth's unknown, although his height be taken.
+        Love's not Time's fool, though rosy lips and cheeks
+        Within his bending sickle's compass come;
+        Love alters not with his brief hours and weeks,
+        But bears it out even to the edge of doom.
+        If this be error and upon me proved,
+        I never writ, nor no man ever loved.
+
+        ### Link
+
+        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
+
+        ### Picture
+
+        ![such a lovely place](:projects-heading.jpg)
+
+        ### Picture (centered)
+
+        ![such a lovely place](:project1_thumb.jpg){:data-align="center"}
+
+        ### Lists
+
+        - Apple
+        - Banana
+        - Orange
+
+        1. Fruits
+            1. Apples
+                - Granny Smith
+                - Mutsu
+            1. Bananas
+                - Cavendish
+                - Red
+        1. Vegetables
 
         ***
-        ![Schematic overview of ESQmodel. (a) ESQmodel takes in two inputs: (1) a protein expression matrix generated from applying single cell segmentation on stacked multiplexed images, (2) a user provided prior expression matrix indicating the level of cellular expression per expected cell type. ESQmodel outputs an entropy score per cell segmented. This metric can be used to compare performances of different segmentation approaches on the same dataset. (b) Three common errors in segmentation: partially segmenting cells, splitting cells, and merging cells.](:esqmodel_overview.jpeg)
 
-    - type: id_analysis
-      project_name: "Single cell decoding of drug induced transcriptomic reprogramming in triple negative breast cancers"
-      project_excerpt: "Kabeer, Tran and Andronescu et al. 2023, bioRxiv"
-      img: ":drug_resistance.png"
-      img_title: "Single cell decoding of drug induced transcriptomic reprogramming in triple negative breast cancers"
-      date: "2023-09-19"
-      post: |
-        ### Abstract
+        ### Tables
+
+        #### Small Table (centered)
+
+        | Fruits(not aligned) | Alignment (centered) | num (right align) |
+        | ------------------- | :------------------: | ----------------: |
+        | Apple               |       centered       |              9999 |
+        | Banana              |  centered long text  |               999 |
+        | Orange              |       centered       |                99 |
+        | Lemon               |       centered       |                 9 |
         {:data-align="center"}
 
-        > **Background**
-        The encoding of cell intrinsic resistance states in breast cancer reflects the contributions of genomic and non-genomic variation. However, identifying the potential contributions of each requires accurate measurement and subtraction of the contribution of clonal fitness from co-measurement of transcriptional states. Somatic genomic variation in gene dosage, copy number variation, is the dominant mutational mechanism in breast cancer contributing to transcriptional variation and has recently been shown to contribute to platinum chemotherapy resistance states. Here we deploy time series measurements of triple negative breast cancer single cell transcriptomes in conjunction with co-measured single cell copy number associated clonal fitness to identify the contributions of genomic and non-genomic mechanisms to drug associated transcription states.
-        
-        > **Results**
-        We generated serial scRNA-seq data (126,556 cells) from triple negative breast cancer (TNBC) patient-derived xenograft (PDX) experiments over 2.5 years in duration, and matched it against genomic copy number single cell data from the same biological samples. We show that the cell memory of transcriptional states of TNBC tumors serially exposed to platinum identifies distinct clonal responses within individual tumours. Copy-number clones with high drug fitness leading to clonal sweeps exhibit less transcriptional reversion, whereas clones with weak drug fitness exhibit highly dynamic transcription on drug withdrawal. Pathway analysis shows that copy number associated and copy number independent transcripts converge on epithelial-mesenchymal transition (EMT) and cytokine signaling states associated with resistance. We show from trajectory analysis that transcriptional reversion exhibits hysteresis, indicating that new intermediate transcriptional states are generated by platinum exposure.
-        
-        > **Conclusions**
-        We discovered that copy number clones with strong genotype associated fitness under platinum became fixed in their states, resulting in minimal transcriptional reversion on drug withdrawal. In contrast clones with weaker fitness undergo non-genomic transcriptional plasticity and these distinct responses co-exist within single tumours. Together the data suggest that copy number associated and copy number independent transcriptional states may contribute to platinum drug resistance within individual tumours. The dominance of genomic or non-genomic mechanisms within individual polyclonal tumours has implications for approaches to restoration of drug sensitivity and re-treatment strategies.
-        
-        ***
-        Available on [Github](https://github.com/molonc/drug_resistant_material/)!
+        #### Wide Table (centered)
 
-        ***
-        ![Workflow of experimental and study design for tracking drug induced transcriptome reprogramming. (a) Tumor biopsies from 6 TNBC patients were transplanted in immunodeficient mice. Three TNBC untreated time-series (Pt1-3) and three cisplatin treated time-series (Pt4-6) with its counter drug holiday samples. UnRx: untreated, Rx: cisplatin treated, RxH: cisplatin drug holiday. The treated, drug holiday samples at X9, Pt5 were excluded from analysis due to its sample qualities. (b) Data analysis workflow, including phylogenetic tree inference using DLP single cell copy number profiles from previously published work, followed by clonal alignment from DLP copy number to RNA-seq gene expression with clonealign. Differentially expressed genes are then classified into in cis and in trans based on overlapping of bin genomic and gene genomic regions, and based on the positive or negative directions of copy number tendency and gene expression trend (up-regulated or down-regulated). Significant pathways are determined by applying gene set enrichment analysis. Pseudotime analysis highlights the achieved genes with significant change in expression along the trajectories of evolution through drug treatment.](:drug_resistance_overview.png)
+        scroll enabled when page is narrow
 
-    - type: id_software
-      project_name: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
-      project_excerpt: "Lee et al. 2023, Bioinformatics"
-      img: ":spatialsort.png"
-      img_title: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
-      date: "2023-06-30"
-      post: |
-        ### Abstract
+        | Fruits | num (left align) | num (right align) | num  | num  | num  |
+        | ------ | :--------------- | ----------------: | ---- | ---- | ---- |
+        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 |
+        | Banana | 111              |               111 | 222  | 333  | 444  |
+        | Orange | 11               |                11 | 22   | 33   | 44   |
+        | Lemon  | 1                |                 1 | 2    | 3    | 4    |
         {:data-align="center"}
 
-        > **Motivation**
-        Recent advances in spatial proteomics technologies have enabled the profiling of dozens of proteins in thousands of single cells in situ. This has created the opportunity to move beyond quantifying the composition of cell types in tissue, and instead probe the spatial relationships between cells. However, most current methods for clustering data from these assays only consider the expression values of cells and ignore the spatial context. Furthermore, existing approaches do not account for prior information about the expected cell populations in a sample.
-        
-        >**Results**
-        To address these shortcomings, we developed SpatialSort, a spatially aware Bayesian clustering approach that allows for the incorporation of prior biological knowledge. Our method is able to account for the affinities of cells of different types to neighbour in space, and by incorporating prior information about expected cell populations, it is able to simultaneously improve clustering accuracy and perform automated annotation of clusters. Using synthetic and real data, we show that by using spatial and prior information SpatialSort improves clustering accuracy. We also demonstrate how SpatialSort can perform label transfer between spatial and nonspatial modalities through the analysis of a real world diffuse large B-cell lymphoma dataset.
+        #### Wider Table
 
-        ***
-        Available on [Github](https://github.com/Roth-Lab/SpatialSort)!
+        scroll enabled when page is narrow
 
-        ***
-        ![(a) Schematic overview, (b) probabilistic graphical model, and (c) prior distributions of SpatialSort. SpatialSort requires expression, cell location, and neighbour relation data as inputs. For each patient, a neighbour graph modelled by a MRF is built to represent the spatial context. Using both expression and spatial data for inference, SpatialSort jointly infers cluster assignment and the interaction parameter of the HMRF to probabilistically assign each cell to a given cell type cluster. When an expectation of certain cell types or a collection of labelled data is present, a prior expression matrix or an anchor expression matrix can be incorporated to improve clustering or perform label transfer.](:spatialsort_overview.png)
+        | Fruits | num (left align) | num (right align) | num  | num  | num  | num  | num  | num  |
+        | ------ | :--------------- | ----------------: | ---- | ---- | ---- | ---- | ---- | ---- |
+        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 | 5555 | 6666 | 7777 |
+        | Banana | 111              |               111 | 222  | 333  | 444  | 555  | 666  | 777  |
+        | Orange | 11               |                11 | 22   | 33   | 44   | 55   | 66   | 77   |
+        | Lemon  | 1                |                 1 | 2    | 3    | 4    | 5    | 6    | 7    |
 
+        ### Code
+
+        #### Quote
+
+        ```python
+        for i in range(5, 10):
+          print(i)
+        ```
+
+    # picture
+    - type: id_picture
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "写真"
+      img: ":project2_thumb.jpg"
+      img_title: "img title2"
+      date: "2021-04-23"
+      post: |
+        # Title
+        This is project content.
+
+        ![Image](:project2_thumb.jpg)
+
+    # quote
+    - type: id_quote
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "William Shakespeare"
+      #img: ":project1_thumb.jpg"
+      #img_title: "img title3"
+      date: "2021-05-27"
+      post: |
+        Let me not to the marriage of true minds
+        Admit impediments. Love is not love
+        Which alters when it alteration finds,
+        Or bends with the remover to remove.
+        O no, it is an ever-fixed mark
+        That looks on tempests and is never shaken;
+        It is the star to every wand'ring barque,
+        Whose worth's unknown, although his height be taken.
+        Love's not Time's fool, though rosy lips and cheeks
+        Within his bending sickle's compass come;
+        Love alters not with his brief hours and weeks,
+        But bears it out even to the edge of doom.
+        If this be error and upon me proved,
+        I never writ, nor no man ever loved.
+    - type: id_quote
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "Albert Einstein"
+      img: ":project2_thumb.jpg"
+      img_title: "img title4"
+      date: "2021-06-08"
+      post: |
+        Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+    - type: id_quote
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "Mae West"
+      img: ":project1_thumb.jpg"
+      img_title: "img title5"
+      date: "2021-08-20"
+      post: |
+        You only live once, but if you do it right, once is enough.
+    - type: id_quote
+      project_name: "サンプルプロジェクト"
+      project_excerpt: "Mahatma Gandhi "
+      img: ":project2_thumb.jpg"
+      img_title: "img title6"
+      date: "2021-12-20"
+      post: |
+        Be the change that you wish to see in the world.

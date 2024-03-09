@@ -12,7 +12,7 @@ page_data:
     back_color: "lightblue"
 
   category:
-    - title: "Methods"
+    - title: "Software"
       type: id_software
       color: "#8e62b4"
     - title: "Analysis"
