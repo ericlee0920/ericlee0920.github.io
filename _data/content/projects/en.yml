@@ -12,7 +12,7 @@ page_data:
     back_color: "lightblue"
 
   category:
-    - title: "Software"
+    - title: "Methods"
       type: id_software
       color: "#8e62b4"
     - title: "Analysis"
@@ -20,29 +20,6 @@ page_data:
       color: "#de4085"
 
   list:
-    # example
-    - type: id_software
-      project_name: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
-      project_excerpt: "Lee et al. 2023, Bioinformatics"
-      img: ":spatialsort.png"
-      img_title: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
-      date: "2023-06-30"
-      post: |
-        ### Abstract
-        {:data-align="center"}
-
-        > **Motivation**
-        Recent advances in spatial proteomics technologies have enabled the profiling of dozens of proteins in thousands of single cells in situ. This has created the opportunity to move beyond quantifying the composition of cell types in tissue, and instead probe the spatial relationships between cells. However, most current methods for clustering data from these assays only consider the expression values of cells and ignore the spatial context. Furthermore, existing approaches do not account for prior information about the expected cell populations in a sample.
-        
-        >**Results**
-        To address these shortcomings, we developed SpatialSort, a spatially aware Bayesian clustering approach that allows for the incorporation of prior biological knowledge. Our method is able to account for the affinities of cells of different types to neighbour in space, and by incorporating prior information about expected cell populations, it is able to simultaneously improve clustering accuracy and perform automated annotation of clusters. Using synthetic and real data, we show that by using spatial and prior information SpatialSort improves clustering accuracy. We also demonstrate how SpatialSort can perform label transfer between spatial and nonspatial modalities through the analysis of a real world diffuse large B-cell lymphoma dataset.
-
-        ***
-        Available on [Github](https://github.com/Roth-Lab/SpatialSort)!
-
-        ***
-        ![(a) Schematic overview, (b) probabilistic graphical model, and (c) prior distributions of SpatialSort. SpatialSort requires expression, cell location, and neighbour relation data as inputs. For each patient, a neighbour graph modelled by a MRF is built to represent the spatial context. Using both expression and spatial data for inference, SpatialSort jointly infers cluster assignment and the interaction parameter of the HMRF to probabilistically assign each cell to a given cell type cluster. When an expectation of certain cell types or a collection of labelled data is present, a prior expression matrix or an anchor expression matrix can be incorporated to improve clustering or perform label transfer.](:spatialsort_overview.png)
-
     - type: id_software
       project_name: "ESQmodel: biologically informed evaluation of 2-D cell segmentation quality in multiplexed tissue images"
       project_excerpt: "Lee et al. 2024, Bioinformatics"
@@ -67,7 +44,7 @@ page_data:
 
     - type: id_analysis
       project_name: "Single cell decoding of drug induced transcriptomic reprogramming in triple negative breast cancers"
-      project_excerpt: "Kabeer, Tran and Andronescu et al. 2024, bioRxiv"
+      project_excerpt: "Kabeer, Tran and Andronescu et al. 2023, bioRxiv"
       img: ":drug_resistance.png"
       img_title: "Single cell decoding of drug induced transcriptomic reprogramming in triple negative breast cancers"
       date: "2023-09-19"
@@ -89,3 +66,25 @@ page_data:
 
         ***
         ![Workflow of experimental and study design for tracking drug induced transcriptome reprogramming. (a) Tumor biopsies from 6 TNBC patients were transplanted in immunodeficient mice. Three TNBC untreated time-series (Pt1-3) and three cisplatin treated time-series (Pt4-6) with its counter drug holiday samples. UnRx: untreated, Rx: cisplatin treated, RxH: cisplatin drug holiday. The treated, drug holiday samples at X9, Pt5 were excluded from analysis due to its sample qualities. (b) Data analysis workflow, including phylogenetic tree inference using DLP single cell copy number profiles from previously published work, followed by clonal alignment from DLP copy number to RNA-seq gene expression with clonealign. Differentially expressed genes are then classified into in cis and in trans based on overlapping of bin genomic and gene genomic regions, and based on the positive or negative directions of copy number tendency and gene expression trend (up-regulated or down-regulated). Significant pathways are determined by applying gene set enrichment analysis. Pseudotime analysis highlights the achieved genes with significant change in expression along the trajectories of evolution through drug treatment.](:drug_resistance_overview.png)
+
+    - type: id_software
+      project_name: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
+      project_excerpt: "Lee et al. 2023, Bioinformatics"
+      img: ":spatialsort.png"
+      img_title: "SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data"
+      date: "2023-06-30"
+      post: |
+        ### Abstract
+        {:data-align="center"}
+
+        > **Motivation**
+        Recent advances in spatial proteomics technologies have enabled the profiling of dozens of proteins in thousands of single cells in situ. This has created the opportunity to move beyond quantifying the composition of cell types in tissue, and instead probe the spatial relationships between cells. However, most current methods for clustering data from these assays only consider the expression values of cells and ignore the spatial context. Furthermore, existing approaches do not account for prior information about the expected cell populations in a sample.
+        
+        >**Results**
+        To address these shortcomings, we developed SpatialSort, a spatially aware Bayesian clustering approach that allows for the incorporation of prior biological knowledge. Our method is able to account for the affinities of cells of different types to neighbour in space, and by incorporating prior information about expected cell populations, it is able to simultaneously improve clustering accuracy and perform automated annotation of clusters. Using synthetic and real data, we show that by using spatial and prior information SpatialSort improves clustering accuracy. We also demonstrate how SpatialSort can perform label transfer between spatial and nonspatial modalities through the analysis of a real world diffuse large B-cell lymphoma dataset.
+
+        ***
+        Available on [Github](https://github.com/Roth-Lab/SpatialSort)!
+
+        ***
+        ![(a) Schematic overview, (b) probabilistic graphical model, and (c) prior distributions of SpatialSort. SpatialSort requires expression, cell location, and neighbour relation data as inputs. For each patient, a neighbour graph modelled by a MRF is built to represent the spatial context. Using both expression and spatial data for inference, SpatialSort jointly infers cluster assignment and the interaction parameter of the HMRF to probabilistically assign each cell to a given cell type cluster. When an expectation of certain cell types or a collection of labelled data is present, a prior expression matrix or an anchor expression matrix can be incorporated to improve clustering or perform label transfer.](:spatialsort_overview.png)
