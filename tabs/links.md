@@ -42,20 +42,20 @@ lng_pair: id_links
 page_data:
   main:
     header: "Links"
-    info: "Your Links page description."
+    info: "Some secret shortcuts..."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "Programming"
-      type: id_programming
+    - title: "Press Interview"
+      type: id_news
       color: "#F4A273"
 
   list:
     -
     # programming
-    - type: id_programming
-      title: "Stack OverFlow"
-      url: "https://stackoverflow.com/"
-      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
+    - type: id_news
+      title: "UBC In The News 2023/09/09"
+      url: "https://news.ubc.ca/2023/09/19/ubc-in-the-news-992/"
+      info: "Taiwanese Student Forum empowers young people to leverage culture and values to benefit the community."
 
 ---
