@@ -1,14 +1,10 @@
-# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
-# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
-# Licensed under MIT
-
 ######################### Home ###########################
 
 home:
   # enables new posts
   new_posts: true
   # to remove limit, please comment it
-  new_posts_count_limit: 3
+  new_posts_count_limit: 5
   # header image using img tag with different scaling.
   header_img_with_img_tag: false
 
