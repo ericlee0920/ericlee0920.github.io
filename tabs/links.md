@@ -64,6 +64,14 @@ page_data:
       title: "ISMB/ECCB 2023"
       url: "https://www.iscb.org/cms_addon/conferences/ismbeccb2023/proceedings.php#MLCSB"
       info: "Proceedings Talk: SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data."
+    - type: id_talk
+      title: "The Terry Fox New Frontiers Program in Modeling lymphoma evolution and clinical trajectory using multiomics."
+      url: "https://www.tfri.ca/our-research/research-project/modeling-lymphoma-evolution-and-clinical-trajectory-using-multiomics"
+      info: "Poster Talk: SpatialSort: a Bayesian model for clustering and cell population annotation of spatial proteomics data."
+    - type: id_talk
+      title: "Taiwan-Canada Scientific Lecture Series 2021"
+      url: "https://sites.google.com/view/taiwan-canada-sls"
+      info: "Invited Lecture: Single cell RNA Sequencing in Cancer Research."
 
     # press interview
     - type: id_news
