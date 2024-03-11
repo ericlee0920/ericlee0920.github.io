@@ -1,15 +1,15 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_life
-title: "Welcome to my Personal Website"
+title: "こんにちは～"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: Eric Lee
+author: リー　エリック
 # multiple category is not supported
-category: life
+category: 生活
 # multiple tag entries are possible
-tags: [life, march2024]
+tags: [生活, 三月2024]
 # thumbnail image for post
 img: ":240311.jpg"
 # disable comments on this page
@@ -40,19 +40,19 @@ date: 2024-03-11 00:00:30 -0800
 ---
 <!-- outline-start -->
 
-Hello! This is Eric :D
+こんにちは！エリックです～:D
 
 <br>
 <br>
 <br>
 
-I decided to start a personal website updating about my life and some random thoughts.
+突然にブログがかきたくなってきたので、ここでゆっくり私の生活や色々の物語などアップデートしたいと思います！
+
 
 <br>
 <br>
 <br>
 
-Feel free to check around and contact me if you are interested in striking up a chat!
-
+気楽に読んでね！何があったら、ご連絡を待ってます！
 
 <!-- outline-end -->
