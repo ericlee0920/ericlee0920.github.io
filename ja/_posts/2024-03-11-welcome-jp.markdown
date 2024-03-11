@@ -42,13 +42,17 @@ date: 2024-03-11 00:00:30 -0800
 
 Hello! This is Eric :D
 
-
+<br>
+<br>
+<br>
 
 I decided to start a personal website updating about my life and some random thoughts.
 
+<br>
+<br>
+<br>
 
-
-Feel free to zoom around and contact me if you are interested in striking up a chat!
+Feel free to check around and contact me if you are interested in striking up a chat!
 
 
 <!-- outline-end -->
