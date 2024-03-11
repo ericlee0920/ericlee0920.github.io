@@ -37,6 +37,11 @@ img: ":home-heading.jpg"
 #published: false
 ---
 
-I am a PhD candidate in the Bioinformatics Graduate Program at the University of British Columbia and the Department of Molecular Oncology at BC Cancer Research Institute.
 
-My research is centered on developing computational approaches to explore the spatial cellular architecture of both normal and tumour tissues. Spatial biology is a growing field for methods development that draw inspiration from pathology, image processing, and machine learning literature. I am especially interested in large-scale transcriptomic and proteomic analysis to elucidate how cell-cell interactions modulates the development or evolution of the cellular ecosystem.
+ブリティッシュコロンビア大学大学院 バイオインフォマティクス研究科 & ブリティッシュコロンビア癌研究所 分子腫瘍学研究室の博士候補生です。
+
+ベイズ機械学習の新たなアプローチで、正常組織と複雑な腫瘍組織の空間オミックス解析の研究を行っています。
+
+空間オミックス解析は、病理学、画像処理、機械学習の文献からインスピレーションを得た、将来において成長発展が期待される分野です。
+
+特に、細胞間相互作用が細胞生態ネットワークの発達や進化をどのように調節するかを解明するための大規模なトランスクリプトーム解析およびプロテオーム解析に興味があります。
