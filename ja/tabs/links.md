@@ -41,15 +41,15 @@ lng_pair: id_links
 ###########################################################
 page_data:
   main:
-    header: "Links"
-    info: "Some secret shortcuts..."
+    header: "リンク"
+    info: "こっち注目！"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "Conference Talks"
+    - title: "発表"
       type: id_talk
       color: "#8e62b4"
-    - title: "Press Interview"
+    - title: "インタビュー"
       type: id_news
       color: "#F4A273"
 
